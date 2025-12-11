@@ -10,14 +10,21 @@
     <link rel="icon" type="image/png" href="/miyatarutyyy_logo.png"/>
     <title>STarUDYYY</title>
   </head>
+  
   <body>
-      <header>
+    <header class="site-header">
+      <div class="title-box">
 	<h1>STarUDYYY</h1>
 	<p>みやたるてぃーぬの個人サイト</p>
-      </header>
-      <main>
-	
-      </main>
+      </div>
+    </header>
+
+    <main>
+    </main>
+
+    <footer class="site-footer">
+      <p>2025 Miyatarutyyy</p>
+    </footer>
   </body>
 </html>
 
@@ -26,77 +33,70 @@
     font-family: "IPA明朝", "IPAMincho", serif;
     margin: 0;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
+    padding: 0;
     background-color: #f6e7c3;
     color: #4a3b2c;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    width: 85vw;
-    height: 95vh;
-    background-color: #fff8E7;
-    box-shadow: 0 8 24px rgba(0, 0, 0, 0.18);
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .site-header {
+    padding: 1.5rem 0;
+    text-align: center;
   }
 
-  header {
-    padding: 1.5rem;
-    text-align: center;
-    border: 1px solid #4a3b2c;
+  .title-box h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .title-box p {
+    margin: 0.2rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
   }
 
   main {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    padding: 2rem 1rem;
   }
 
   .page {
     width: 100%;
     max-width: 720px;
-    height: 100%;
-    margin: 0 auto;
-    background: #fff8E7;
+    background: #fffdf7;
     border: 1px solid #4a3b2c;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
     box-sizing: border-box;
   }
 
-  /* Smartphone (up to 480px) */
+  .site-footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.75;
+  }
+
   @media (max-width: 480px) {
     .page {
+      padding: 1.5rem;
       max-width: 100%;
-      padding: 1rem;
-    }
-    
-    
-    .container {
-      width: 100vw;
-      height: auto;
-      min-height: 100vh;
-      box-shadow: none;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
     }
   }
-  
-  
-  /* Tablet & laptop split screen (480–768px) */
+
   @media (min-width: 480px) and (max-width: 768px) {
     .page {
-      max-width: 600px; 
+      max-width: 600px;
     }
   }
 
-
-  /* Larger screens (768px〜) */
-  @media (min-width: 768px) {
-    .page {
-      max-width: 720px;
-    }
-  }
+  
 </style>
