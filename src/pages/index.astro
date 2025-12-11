@@ -19,8 +19,12 @@
       </div>
     </header>
 
+    <div class="section-divider"></div>
+    
     <main>
     </main>
+
+    <div class="section-divider"></div>
 
     <footer class="site-footer">
       <p class="lisence-line">
@@ -42,7 +46,20 @@
     flex-direction: column;
     min-height: 100vh;
   }
-  
+
+  .section-divider {
+  width: 92%;
+  height: 1px;
+  margin: 5px auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #4a3b2c,
+    transparent
+  );
+  opacity: 0.8;
+}
+
   .site-header {
     padding: 1.5rem 0;
     text-align: center;
