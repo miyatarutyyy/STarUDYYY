@@ -1,5 +1,6 @@
 ---
-
+import Header from "../components/Header.astro";
+import "../styles/global.css";
 ---
 
 <html lang="ja">
@@ -12,19 +13,7 @@
   </head>
   
   <body>
-    <header class="site-header">
-      <div class="title-box">
-	<h1>STarUDYYY</h1>
-
-	<nav class="chapter-nav" aria-label="Site index">
-	  <ul>
-	    <li><a href={import.meta.env.BASE_URL}>Home</a></li>
-	    <li><a href={`${import.meta.env.BASE_URL}blog`}>Blog</a></li>
-	    <li><a href={`${import.meta.env.BASE_URL}works`}>Works</a></li>
-	    <li><a href={`${import.meta.env.BASE_URL}about`}>About</a></li>
-	  </ul>
-      </div>
-    </header>
+    <Header />
 
     <div class="section-divider"></div>
     
@@ -58,20 +47,6 @@
 </html>
 
 <style>
-  :global(body) {
-    font-family: "IPA明朝", "IPAMincho", serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-
-    background: #f6e7c3;
-    
-    color: #4a3b2c;
-    text-shadow: 0 0 0.5px rgba(0, 0, 0, 0.15);
-        
-    display: flex;
-    flex-direction: column;
-  }
 
   .section-divider {
   width: 92%;

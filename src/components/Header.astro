@@ -1,0 +1,66 @@
+<header class="site-header">
+  <div class="title-box">
+    <h1>STarUDYYY</h1>
+    <nav class="chapter-nav" aria-label="Site index">
+      <ul>
+        <li><a href={import.meta.env.BASE_URL}>Home</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}blog`}>Blog</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}works`}>Works</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}about`}>About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  background: rgba(246, 231, 195, 0.9);
+  backdrop-filter: blur(2px);
+
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.title-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.title-box h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.chapter-nav {
+  margin-top: 0.6rem;
+}
+
+.chapter-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.chapter-nav a {
+  text-decoration: none;
+  color: #4a3b2c;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  opacity: 0.75;
+}
+
+.chapter-nav a:hover {
+  opacity: 1;
+}
+</style>
